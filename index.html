@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width ,initial-scale=1">
+        <link rel="stylesheet" href="/style.css" />
+    </head>
+
+    <body>
+        <h1>
+            SPLI<br>TTER
+        </h1>
+    <div class="main">
+        <div class="other">
+        <section class="section1">
+            <h2> Bill </h2>
+            <div class="rectangle">
+                <img src="./assets/$.svg">
+                <input class="peopleinput" id="input-bill" type="number" placeholder="0" min="0">
+           </div>
+                <h2>
+                    Select Tip %
+                </h2>
+        </section>
+        <div class="buttonclass">
+        <button onfocus="button1(this)" value="5">
+            5%
+        </button>
+        <button onclick="button1(this)" value="10">
+            10%
+        </button>
+        <button onclick="button1(this)" value="15">
+            15%
+        </button>
+        <button onclick="button1(this)" value="25">
+            25%
+        </button>
+        <button onclick="button1(this)" value="50">
+            50%
+        </button>
+        <input onfocusout="button2(this)" id="Custom" type="number" placeholder="custom"  min="0">
+        
+        </button>
+        <div class="zero">
+        <h2>Number of People</h2>
+        <p id="error" style="display:none">Can’t be zero</p>
+        </div>
+        <div id="rectangle2">
+            <img src="./assets/Group 8 (1).svg">
+            <input class="peopleinput" id="number-people" type="number" placeholder="0" min="0">
+        </div>
+        </div>
+        </div>
+        <div class="result">
+            <div class="lastsection">
+            <div class="tipamount">
+                <h4>Tip Amount</h4>
+                <h5>/ person</h5>
+                </div>
+                    <h6 class="first">$0</h6>
+                </div>
+                <div class="total">
+                    <div class="totalamount">
+                    <h4>Total</h4>
+                    <h5>/ person</h5>
+                </div>
+                <h6 class="second">$0</h6>
+                </div>
+                <button onclick="resetAll();" id="button3" >
+                    RESET
+                </button>
+            </div>
+        </div>
+        </section>
+    </div>
+    <script src="/script.js"></script>
+    </body>
+</html>
